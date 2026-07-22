@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You, Always</title>
+  <meta name="description" content="A little digital keepsake, made with love." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="petal-field" id="petalField" aria-hidden="true"></div>
+  <div class="scroll-thread" aria-hidden="true">
+    <div class="scroll-thread__fill" id="scrollFill"></div>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="eyebrow">a small website, for a big feeling</p>
+      <h1 class="hero__title">
+        Happy <span class="hero__title--accent letter-wave">Monthsary</span>,<br>
+        <span class="editable" data-hint="Her name">My Love</span>
+      </h1>
+
+      <div class="hero__counter" id="heroCounter" aria-live="polite">
+        <div class="hero__counter-row">
+          <div class="counter-unit">
+            <span class="counter-unit__num" id="numYears">0</span>
+            <span class="counter-unit__label">years</span>
+          </div>
+          <div class="counter-unit">
+            <span class="counter-unit__num" id="numMonths">0</span>
+            <span class="counter-unit__label">months</span>
+          </div>
+          <div class="counter-unit">
+            <span class="counter-unit__num" id="numDays">0</span>
+            <span class="counter-unit__label">days</span>
+          </div>
+        </div>
+        <p class="hero__counter-caption">...and every single one of them with you.</p>
+      </div>
+
+      <a href="#letter" class="scroll-cue" aria-label="Scroll to read the letter">
+        <span>keep going</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1v20M8 21l6-6M8 21l-6-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section class="letter-section" id="letter">
+    <p class="eyebrow eyebrow--center">something I wanted to put into words</p>
+    <h2 class="section-title">A Letter For You</h2>
+
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-expanded="false" aria-label="Open the letter">
+      <div class="envelope__back"></div>
+
+      <div class="envelope__paper" id="envelopePaper">
+        <p class="envelope__paper-text editable" data-hint="Write your message here">
+          My Love!, <br><br>
+
+          Two years and one month ago, I didn't just gain a partner — I gained
+          my favorite person to tell things to, my calm on hard days, and my
+          loudest cheerleader on good ones. <br><br>
+
+          Thank you for the quiet Tuesdays and the loud celebrations, for
+          putting up with my terrible jokes, and for choosing me again,
+          every single day, without making it feel like a chore. <br><br>
+
+          I made you this little corner of the internet because you deserve
+          more than a text that says "happy monthsary" — you deserve
+          something that took time, the way you deserve someone who takes
+          time with you. <br><br>
+
+          I love you today, and I'll love you on every monthsary after this
+          one too. <br><br>
+
+          Forever yours,<br>
+          <span class="editable" data-hint="Your name">Love</span>
+        </p>
+      </div>
+
+      <div class="envelope__front">
+        <div class="envelope__flap"></div>
+        <div class="envelope__seal">
+          <span>♥</span>
+        </div>
+        <p class="envelope__cue">tap to open</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="gallery-section" id="gallery">
+    <p class="eyebrow eyebrow--center">a few of my favorite moments</p>
+    <h2 class="section-title">Little Pieces of Us</h2>
+    <p class="gallery-hint">(tap a photo to bring it forward)</p>
+
+    <div class="gallery" id="gallery-grid">
+      <figure class="polaroid polaroid--1">
+        <div class="polaroid__photo" style="background-image:url('images/MangInasal.png.jpg')" data-placeholder="1"></div>
+        <figcaption class="editable" data-hint="Caption">Mang Inasal date</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--2">
+        <div class="polaroid__photo" style="background-image:url('images/Galayarn!.jpg')" data-placeholder="2"></div>
+        <figcaption class="editable" data-hint="Caption">First BGC gala</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--3">
+        <div class="polaroid__photo" style="background-image:url('images/jabili.jpg')"data-placeholder="3"></div>
+        <figcaption class="editable" data-hint="Caption">Jollibee Date</figcaption>
+      </figure>
+    </div>
+  </section>
+ 
+  <section class="countdown-section" id="countdown">
+    <p class="eyebrow eyebrow--center">but we're not done yet</p>
+    <h2 class="section-title">Until Our Next One</h2>
+
+    <div class="countdown" id="countdownTimer" aria-live="polid">
+      <div class="countdown-unit">
+        <span class="countdown-unit__num" id="cdDays">00</span>
+        <span class="countdown-unit__label">days</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-unit__num" id="cdHours">00</span>
+        <span class="countdown-unit__label">hours</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-unit__num" id="cdMinutes">00</span>
+        <span class="countdown-unit__label">minutes</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-unit__num" id="cdSeconds">00</span>
+        <span class="countdown-unit__label">seconds</span>
+      </div>
+    </div>
+    <p class="countdown-caption">until I get to celebrate you all over again.</p>
+  </section>
+ 
+  <section class="closing-section">
+    <p class="closing-heart">♡</p>
+    <p class="closing-text editable" data-hint="Closing line">
+      Here's to every monthsary we haven't had yet.
+    </p>
+    <p class="closing-sign">— <span class="editable" data-hint="Your name">Love</span>, always</p>
+  </section>
+  
+  <div class="music-player" id="musicPlayer">
+    <button class="music-player__toggle" id="musicToggle" aria-label="Play background music" aria-pressed="false">
+      <span class="eq-bar"></span>
+      <span class="eq-bar"></span>
+      <span class="eq-bar"></span>
+    </button>
+    <span class="music-player__label" id="musicLabel">our song</span>
+  </div>
+  <audio id="bgAudio" loop preload="none">
+    <source src="audio/LANY - Prettiest Thing I've Ever Seen our song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
